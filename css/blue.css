@@ -1,0 +1,18 @@
+body{
+    background: url(../img/cielo.jpg);
+    background-attachment: fixed;
+}
+#logo{
+   
+    background: #0dd4d1;
+    
+}
+
+#menu ul li a:hover{
+    color: rgb(36, 202, 220);
+}
+
+.buntton-more{
+   
+    background: #0dd4d1;
+}

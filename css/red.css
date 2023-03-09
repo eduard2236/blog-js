@@ -1,0 +1,18 @@
+body{
+    background: url(../img/rojo.jpg);
+    background-attachment: fixed;
+}
+#logo{
+   
+    background: #CA3413;
+    
+}
+
+#menu ul li a:hover{
+    color: rgb(214, 39, 23);
+}
+
+.buntton-more{
+   
+    background: #CA3413;
+}

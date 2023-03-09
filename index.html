@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link id="theme" rel="stylesheet" href="css/green.css">
+    <!-- slider -->
+   <link rel="stylesheet" href="css/jquery.bxslider.css">
+    
+    
 </head>
 <body>
+    <div id="selector-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
     <section id="global">
         <!-- cabecera -->
         <header>
@@ -27,23 +37,16 @@
         </header>
         <!-- slider -->
         <div id="slider">
-
+            <div class="bxslider">
+                <div><img src="img/hojas.jpg" title="hojas "></div>
+                <div><img src="img/rojo.jpg" title="rojo"></div>
+                <div><img src="img/cielo.jpg" title="cielo azul"></div>
+              </div>
         </div>
         <!-- contenido -->
         <section id="content">
             <div id="post">
-                <article class="post">
-                    <h2>Titulo del articulo</h2>
-                    <span class="fecha">Fecha de publicacion</span>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab eum alias minima, soluta totam reiciendis cumque dolores fuga veniam voluptate odit rerum voluptatum, corporis mollitia error odio maxime voluptates molestiae similique culpa asperiores est explicabo ullam hic. Veritatis eaque debitis quia odit nostrum aliquid eum repudiandae repellendus accusamus assumenda, quos non aperiam suscipit saepe unde ea dolorem pariatur. Vitae, rem?</p>
-                    <a href="" class="buntton-more">Leer mas</a>
-                </article>
-                <article class="post">
-                    <h2>Titulo del articulo</h2>
-                    <span class="fecha">Fecha de publicacion</span>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab eum alias minima, soluta totam reiciendis cumque dolores fuga veniam voluptate odit rerum voluptatum, corporis mollitia error odio maxime voluptates molestiae similique culpa asperiores est explicabo ullam hic. Veritatis eaque debitis quia odit nostrum aliquid eum repudiandae repellendus accusamus assumenda, quos non aperiam suscipit saepe unde ea dolorem pariatur. Vitae, rem?</p>
-                    <a href="" class="buntton-more">Leer mas</a>
-                </article>
+                <!-- se colocan con json  -->
             </div>
             <aside id="aside">
                 <div id="about">
@@ -78,7 +81,9 @@
     <footer>
         Blog con js Eduard Colmenares  &copy;
     </footer>
-    
- <script src="js/main.js"></script>   
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/moment-with-locales.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/main.js"></script>   
 </body>
 </html>

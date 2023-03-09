@@ -1,0 +1,18 @@
+body{
+    background: url(../img/hojas.jpg);
+    background-attachment: fixed;
+}
+#logo{
+   
+    background: #235e3d;
+    
+}
+
+#menu ul li a:hover{
+    color: rgb(30, 203, 30);
+}
+
+.buntton-more{
+   
+    background: #235e3d;
+}
