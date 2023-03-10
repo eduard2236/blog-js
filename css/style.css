@@ -5,6 +5,10 @@
     list-style: none;
 
 }
+
+#login input{
+    display: block;
+}
 .clearFix{
     float: none;
     clear: both;
@@ -95,7 +99,7 @@ body{
 }
 #aside{
     font-family: Arial, Helvetica, sans-serif;
-    width: 31%;
+    width: 30%;
     float: right;
 
 }
@@ -181,4 +185,11 @@ footer{
 }
 #to-blue{
     background:#0dd4d1; 
+}
+/* enlace para ir al principio */
+.subir{
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
 }

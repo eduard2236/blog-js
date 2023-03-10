@@ -64,5 +64,35 @@ moment.locale("es");
     $('#to-blue').click(function(){
         theme.attr('href','css/blue.css');
     });
+    /* scroll arriba de la web */
+    $('.subir').click(function(e){
+        e.preventDefault();
+        $('html,body').animate({
+                scrollTop: 0
+        },500);
+        return false;
+    });
 
+    //login falso
+    $('#login form').submit(function(){
+        var userName= $('#name').val();
+        
+        localStorage.setItem('userName', userName);
+    });
+    //oculta formulario y crea boton de cerrar sesion
+
+    var userName = localStorage.getItem('userName');
+
+    if(userName != null && userName != "udenfined"){
+        var aboutParrafo = $("#about p");
+
+        aboutParrafo.html(`<br><strong>Bienvenido: ${userName}</strong> `);
+        aboutParrafo.append("<a href='#' id='logout'>Cerrar sesion</a>");
+        $('#login').hide();
+        $('#logout').click(function(){
+            localStorage.clear();
+            location.reload();
+        });
+    }
+    
   
