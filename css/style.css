@@ -70,7 +70,8 @@ body{
 .post{
     padding: 7px;
 }
-.post h2{
+.post h2,#box h2{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     color: #333;
 
@@ -125,7 +126,9 @@ body{
 
 form input[type="text"],
 form input[type="password"],
-form input[type="email"]{
+form input[type="email"],
+form input[type="number"],
+select{
     padding: 5px;
     border-radius: 2px;
     border: 1px solid #ccc;
@@ -192,4 +195,49 @@ footer{
     text-decoration: none;
     display: block;
     float: right;
+}
+/* acordeon */
+#box{
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+}
+#acordeon{
+    margin-top: 20px;
+}
+#reloj{
+
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family:  Helvetica, sans-serif;
+    color: #333;
+    border: 5px dashed #333;
+    width: 40%;
+    padding: 30px;
+    margin: 20px auto;
+}
+
+/* formulario de pagina formulario */
+
+#form_contact{
+    width: 90%;
+    margin-top: 20px;
+}
+
+#form_contact label{
+    display: block;
+}
+
+#form_contact input[type='submit']{
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 40%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#form_contact span {
+    display: block;
+    color: red;
+    width: 80%;
 }

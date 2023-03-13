@@ -7,8 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link id="theme" rel="stylesheet" href="css/green.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.theme.min.css">
     <!-- slider -->
-   <link rel="stylesheet" href="css/jquery.bxslider.css">
+   
     
     
 </head>
@@ -35,18 +38,32 @@
                 </ul>
             </nav>
         </header>
-        <!-- slider -->
-        <div id="slider">
-            <div class="bxslider">
-                <div><img src="img/hojas.jpg" title="hojas "></div>
-                <div><img src="img/rojo.jpg" title="rojo"></div>
-                <div><img src="img/cielo.jpg" title="cielo azul"></div>
-              </div>
-        </div>
+       
         <!-- contenido -->
         <section id="content">
-            <div id="post">
-                <!-- se colocan con json  -->
+            <div id="box">
+                <h2>Sobre mi</h2>
+                <!--cargar acordeon -->
+                <div id="acordeon">
+                    <h3>¿Quienes Somos?</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vero non consequuntur sequi corporis quas officia error delectus, sed quis.
+                        </p>
+                    </div>
+                    <h3>¿como lo hacemos?</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vero non consequuntur sequi corporis quas officia error delectus, sed quis.
+                        </p>
+                    </div>
+                    <h3>¿Cuales son nuestras herramientas?</h3>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vero non consequuntur sequi corporis quas officia error delectus, sed quis.
+                        </p>
+                    </div>
+                </div>
             </div>
             <aside id="aside">
                 <div id="about">
@@ -82,8 +99,7 @@
         Blog con js Eduard Colmenares  &copy; <a href="#" class="subir">Ir hacia arriba</a>
     </footer>
     <script src="js/jquery-3.6.3.min.js"></script>
-    <script src="js/moment-with-locales.js"></script>
-    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
     <script src="js/main.js"></script>   
 </body>
 </html>

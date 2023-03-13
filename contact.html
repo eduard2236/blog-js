@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.13.2/jquery-ui.theme.min.css">
     <link id="theme" rel="stylesheet" href="css/green.css">
+    
     <!-- slider -->
-   <link rel="stylesheet" href="css/jquery.bxslider.css">
+   
     
     
 </head>
@@ -35,18 +39,46 @@
                 </ul>
             </nav>
         </header>
-        <!-- slider -->
-        <div id="slider">
-            <div class="bxslider">
-                <div><img src="img/hojas.jpg" title="hojas "></div>
-                <div><img src="img/rojo.jpg" title="rojo"></div>
-                <div><img src="img/cielo.jpg" title="cielo azul"></div>
-              </div>
-        </div>
+       
         <!-- contenido -->
         <section id="content">
-            <div id="post">
-                <!-- se colocan con json  -->
+            <div id="box">
+                <h2>Contacto</h2>
+                <!--formulario de contacto -->
+                <div>
+                    <form action="#" method="post" enctype="multipart/form-data" id="form_contact">
+                    
+                        <label for="name">Nombre</label>
+                        <input type="text"  name="name" data-validation="alphanumeric">
+
+                        <label for="surname">Apellido</label>
+                        <input type="text" name="surname"  data-validation="alphanumeric">
+
+                        <label for="email">Correo</label>
+                        <input type="email" name="email"  data-validation="email">
+
+                        <label for="sex">Sexo</label>
+                        <select name="sex" id="sex" data-validation="required">
+                            <option value=""> Seleccione</option>
+                            <option value="men">Hombre</option>
+                            <option value="whomen">Mujer</option>
+
+                        </select>
+
+                        <label for="date">Fecha de nacimiento</label>
+                        <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy">
+
+                        <label for="age">Edad</label>
+                        <input type="number" name="age" id="age" data-validation="number">
+
+                        <input type="submit" value="Enviar">
+
+
+                    </form>
+                </div>
+               
+
+              
             </div>
             <aside id="aside">
                 <div id="about">
@@ -59,7 +91,7 @@
                     <h4><span>Identificate</span></h4>
                     <form action="">
                         <label for="name" >Nombre</label>
-                        <input type="text" name="name" id="name">
+                        <input type="text" name="name" id="name" >
 
                         <label for="email">Correo</label>
                         <input type="email" name="email" id="email">
@@ -82,8 +114,8 @@
         Blog con js Eduard Colmenares  &copy; <a href="#" class="subir">Ir hacia arriba</a>
     </footer>
     <script src="js/jquery-3.6.3.min.js"></script>
-    <script src="js/moment-with-locales.js"></script>
-    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.form-validator.min.js"></script>
+    <script src="js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
     <script src="js/main.js"></script>   
 </body>
 </html>
